@@ -1,5 +1,5 @@
 /* Home page css */
-#canvas {
+/* #canvas {
     padding: 60px;
 }
 #headerWrapper {
@@ -146,26 +146,91 @@ section {
 .col{
     text-align: center;
 }
-
-
+ */
 
 /* home page */
-img{
+ header{
+    display: grid;
+    grid-template-columns: 300px auto;
+    font-family: Raleway,'serif';
+    color: rgb(28, 28, 166);
+    font-weight: 800;
+    font-size: 1.05em;
+ }
+
+ .heading{
+    margin-left: 5%;
+ }
+
+ nav ul{
+    display: flex;
     width: 100%;
+    padding-left: 30%;
+    flex-direction: row;
+    gap: 2%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+ }
+
+*{
+    font-family: Raleway, 'serif';
 }
-.grid-image img{
-    height: 390px;
-    width: 300px;
-}
-.row{
-    margin-bottom: 3%;
-}
-.footer-img {
-    height: 5%;
-    width: 5%;
-    background-color: #111;
-    border-radius: 25px;
-}
-.social-links{
-    text-align: center;
+
+ nav ul li{
+    list-style-type: none;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 700;
+ }
+
+ nav ul li a:hover{
+   background-color: gainsboro;
+ }
+
+ .logo{
+    width: 50%;
+    margin-left: 15%;
+ }
+
+ footer {
+    display: inline;
+ }
+
+ footer nav {
+    display: block;
+ }
+
+/* mobile view */
+@media only screen and (max-width: 768px) {
+    .logo{
+        margin-left: 2%;
+        width: 70%;
+    }
+
+    header{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .heading{
+        margin: 0;
+        font-size: 15px;
+        text-align: left
+    }
+    nav ul{
+       padding-left: 15%;
+    }
+    
+    li{
+        font-weight: bold;
+    }
+
+    footer nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+    }
 }

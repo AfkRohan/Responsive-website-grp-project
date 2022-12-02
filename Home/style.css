@@ -149,13 +149,21 @@ section {
  */
 
 /* home page */
+@font-face {
+    font-family: Raleway;
+    src: url(../Raleway/Raleway-VariableFont_wght.ttf);
+  }
  header{
     display: grid;
-    grid-template-columns: 300px auto;
-    font-family: Raleway,'serif';
+    padding-left: 5%;
+    grid-template-columns: 250px auto;
     color: rgb(28, 28, 166);
     font-weight: 800;
     font-size: 1.05em;
+ }
+
+ header h1{
+    text-align: left;
  }
 
  .heading{
@@ -164,16 +172,20 @@ section {
 
  nav ul{
     display: flex;
-    width: 100%;
-    padding-left: 30%;
     flex-direction: row;
     gap: 2%;
     flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+nav ul li{
     flex-grow: 1;
- }
+}
 
 *{
-    font-family: Raleway, 'serif';
+    font-family:'Raleway';
 }
 
  nav ul li{
@@ -190,17 +202,43 @@ section {
    background-color: gainsboro;
  }
 
- .logo{
+ #logo{
     width: 50%;
-    margin-left: 15%;
  }
 
  footer {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
  }
 
  footer nav {
     display: block;
+    flex-grow: 1;
+ }
+
+ footer nav ul{
+    display: flex;
+    flex-direction: column;
+ }
+
+ footer p{
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+ }
+
+ /* Tablet View */
+ @media only screen and (max-width : 1024px) {
+    nav ul{
+        width: 60%;
+     }
+
+     header {
+        grid-template-columns: 150px auto;
+     }
  }
 
 /* mobile view */
@@ -212,6 +250,7 @@ section {
 
     header{
         display:flex;
+        flex-wrap: wrap;
         flex-direction: row;
     }
 
@@ -221,16 +260,17 @@ section {
         text-align: left
     }
     nav ul{
-       padding-left: 15%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
     }
     
     li{
         font-weight: bold;
     }
 
-    footer nav ul{
+    footer {
         display: flex;
         flex-direction: column;
-        margin-left: 25%;
     }
 }

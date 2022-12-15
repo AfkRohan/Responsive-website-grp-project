@@ -1,0 +1,329 @@
+/* This is our common css for website */
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: Helvetica,arial,sans-serif; */
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-family: europa;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.8em;
+    letter-spacing: .04em;
+    font-size: 14px;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /* background-image: url(img/London-Wallpaper-30-scaled.webp); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;   */
+  /* background-size: cover; */
+}
+/* Home page css */
+#canvas {
+    padding: 20px;
+}
+#headerWrapper {
+    position: relative;
+    z-index: 999;
+}
+#header {
+    position: relative;
+}
+#logo {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+.logo-image{
+    width: 20%;
+}
+.heading{
+    margin-bottom: 20px;
+}
+.page-title{
+    margin: 20px auto 0;
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2e2d69;
+    text-shadow: 2px 2px 8px #fff;
+}
+#heroimg {
+    margin-top: 2em;
+    max-width: 1024px;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: left;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: "Varela" Round,arial,sans-serif;
+    font-weight: normal;
+    line-height: 1.4em;
+    text-transform: normal;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    text-transform: none;
+    font-size: 24px;
+    letter-spacing: .1em;
+    margin: 1em 0 0.5em;
+} */
+h2, h3, h4, .comment-count {
+    color: #fff;
+}
+h2{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.6em;
+    color: #a10000;
+    text-shadow: 2px 2px 8px #fff;
+}
+img {
+    vertical-align: middle;
+}
+.logo-subtitle {
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: normal;
+    line-height: 2em;
+    font-size: 12px;
+    text-transform: normal;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.3em;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: 17px;
+    color: #2b2b2b;
+    width: 70%;
+}
+#topNav {
+    position: relative;
+    text-align: center;
+}
+ #topNav nav,  #topNav ul,  #topNav li {
+    display: inline;
+    float: none;
+}
+#topNav ul{
+    display: flex;
+    float: none;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+#topNav nav {
+    position: relative;
+    bottom: 0px;
+    margin-top: 0;
+    float: left;
+}
+#topNav nav {
+    float: none;
+}
+#header nav, #header nav a {
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: Arial,sans-serif; */
+    font-weight: normal;
+    text-transform: normal;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: 15px;
+}
+section {
+    display: block;
+}
+#page {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+#topNav nav li {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 100%;
+}
+#topNav nav li a {
+    line-height: 30px;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #c96e38;
+    /* text-shadow: 2px 2px 8px #2e2d69; */
+}
+
+.col{
+    text-align: center;
+}
+
+
+
+/* home page */
+.logo-image a img{
+    width: 50%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2%;
+    padding: 10px;
+  }
+.grid-image img{
+    height: 390px;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px; */
+    box-shadow:  30px 30px 50px #fff;
+
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.grid-image{
+    position: relative;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.grid-image:hover img {
+    opacity: 0.3;
+}
+.grid-image:hover .middle {
+    opacity: 1;
+}
+.content-desc{
+    /* margin-top: 50px; */
+    /* background-color: #f2faff; */
+    padding: 1%;
+    border-radius: 10px;
+}
+.content-desc p {
+    font-size: 16px;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+footer{
+    margin-top: 50px;
+}
+.footer-img {
+    /* height: 3%; */
+    width: 3%;
+    /* background-color: #111; */
+    border-radius: 25px;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+.item nav ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+.item nav li {
+    padding: 0 1.8% 0 1.8%;
+    margin-right: 30px;
+    font-size: 16px;
+}
+.item nav ul{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    float: none;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    padding: 13px 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
+    background-color: #272727;
+    border-color: #272727;
+}
+.button-container{
+    text-align: center;
+    margin-top: 5%;
+}
+@media all and (max-width:760px) {
+    .desktop{
+        display: none;
+    }
+    .logo-image{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #logo {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .logo-subtitle{
+        width: 100%;
+        text-align: center;
+    }
+    nav li{
+         display: block;    
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0%;
+        padding: 10px;
+    }
+    .item nav ul{
+        display: flex;
+        flex-direction: column; 
+    }
+    .social-links{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .footer-img {     
+        width: 7%;
+    }
+    
+    
+  
+}

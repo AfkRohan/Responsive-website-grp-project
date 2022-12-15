@@ -17,11 +17,13 @@ h2{
 
 #image-gallery{
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
 }
-
+.gallery{
+    margin: 10px;
+}
 .gallery img{
-    width: 150px;
+    width: 100%;
 }
 
 .gallery p{
@@ -31,7 +33,7 @@ h2{
 
 #packages,#reviews{
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
     border-bottom: solid gainsboro 3px;
 }
 

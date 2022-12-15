@@ -1,1 +1,45 @@
 /* Workshop page css */
+h3{
+    color: black !important;
+}
+p{
+    font-weight: 400;
+}
+.workshop-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2%;
+    padding: 10px;
+  }
+.grid-image img{
+    height: 390px;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px; */
+    box-shadow:  30px 30px 50px #fff;
+
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.grid-image{
+    position: relative;
+}
+.button{
+    padding: 13px 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
+    background-color: #272727;
+    border-color: #272727;
+}

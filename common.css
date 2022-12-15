@@ -1,126 +1,289 @@
-/* home page */
-@font-face {
-    font-family: Raleway;
-    src: url(Raleway/Raleway-VariableFont_wght.ttf);
-  }
- header{
-    display: grid;
-    padding-left: 5%;
-    grid-template-columns: 250px auto;
-    color: rgb(28, 28, 166);
-    font-weight: 800;
-    font-size: 1.05em;
- }
-
- header h1{
-    text-align: left;
- }
-
- .heading{
-    margin-left: 5%;
- }
-
- nav ul{
+/* This is our common css for website */
+body {
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: Helvetica,arial,sans-serif; */
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-family: europa;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.8em;
+    letter-spacing: .04em;
+    font-size: 14px;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /* background-image: url(img/London-Wallpaper-30-scaled.webp); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;   */
+  /* background-size: cover; */
+}
+p{
+    font-weight: 400;
+}
+/* Home page css */
+#canvas {
+    padding: 20px;
+}
+#headerWrapper {
+    position: relative;
+    z-index: 999;
+}
+#header {
+    position: relative;
+}
+#logo {
     display: flex;
-    flex-direction: row;
-    gap: 2%;
-    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+.logo-image{
+    width: 20%;
+}
+.heading{
+    margin-bottom: 20px;
+}
+.page-title{
+    margin: 20px auto 0;
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2e2d69;
+    text-shadow: 2px 2px 8px #fff;
+}
+#heroimg {
+    margin-top: 2em;
+    max-width: 1024px;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: left;
+}
+main {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: "Varela" Round,arial,sans-serif;
+    font-weight: normal;
+    line-height: 1.4em;
+    text-transform: normal;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    text-transform: none;
+    font-size: 24px;
+    letter-spacing: .1em;
+    margin: 1em 0 0.5em;
+} */
+h2, h3, h4, .comment-count {
+    color: #fff;
+}
+h2{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.6em;
+    color: #a10000;
+    text-shadow: 2px 2px 8px #fff;
+}
+img {
+    vertical-align: middle;
+}
+.logo-subtitle {
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: normal;
+    line-height: 2em;
+    font-size: 12px;
+    text-transform: normal;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.3em;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: 17px;
+    color: #2b2b2b;
+    width: 70%;
+}
+#topNav {
+    position: relative;
+    text-align: center;
+}
+ #topNav nav,  #topNav ul,  #topNav li {
+    display: inline;
+    float: none;
+}
+#topNav ul{
+    display: flex;
+    float: none;
     align-items: center;
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
-nav ul li{
-    flex-grow: 1;
+#topNav nav {
+    position: relative;
+    bottom: 0px;
+    margin-top: 0;
+    float: left;
 }
-
-*{
-    font-family:'Raleway';
+#topNav nav {
+    float: none;
 }
-
- nav ul li{
-    list-style-type: none;
- }
-
- nav ul li a{
+#header nav, #header nav a {
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: Arial,sans-serif; */
+    font-weight: normal;
+    text-transform: normal;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: 15px;
+}
+section {
+    display: block;
+}
+#page {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+#topNav nav li {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 100%;
+}
+#topNav nav li a {
+    line-height: 30px;
+    display: inline-block;
+    font-size: 18px;
     text-decoration: none;
-    color: darkblue;
-    font-weight: 700;
- }
+    font-weight: 600;
+    color: #c96e38;
+    /* text-shadow: 2px 2px 8px #2e2d69; */
+}
 
- nav ul li a:hover{
-   background-color: gainsboro;
- }
+.col{
+    text-align: center;
+}
 
- #logo{
+
+
+
+/* home page */
+.logo-image a img{
     width: 50%;
- }
-
- footer {
+}
+.footer-img {
+    /* height: 3%; */
+    width: 5%;
+    /* background-color: #111; */
+    border-radius: 25px;
+}
+.social-links{
+    text-align: center;
+    width: 40%;
+}
+.social-links a{
+    text-decoration: none;
+}
+#footerWrapper{
+    margin-top: 5%;
+}
+#footer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
- }
-
- footer nav {
-    display: block;
-    flex-grow: 1;
- }
-
- footer nav ul{
-    display: flex;
-    flex-direction: column;
- }
-
- footer p{
+}
+#footerBlocks-1{
     width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.footer-nav{
+    display: inline-block;
+}
+#footerNav {
+    position: relative;
     text-align: center;
-    background-color: antiquewhite;
-    margin: 0;
-    padding: 0;
- }
-
- /* Tablet View */
- @media only screen and (max-width : 1024px) {
-    nav ul{
-        width: 60%;
-     }
-
-     header {
-        grid-template-columns: 150px auto;
-     }
- }
-
-/* mobile view */
-@media only screen and (max-width: 768px) {
-    .logo{
-        margin-left: 2%;
-        width: 70%;
+}
+ #footerNav nav,  #footerNav ul,  #footerNav li {
+    display: inline;
+    float: none;
+}
+#footerNav ul{
+    display: flex;
+    float: none;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+#footerNav nav li {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 100%;
+}
+#footerNav nav li a {
+    line-height: 30px;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    /* text-shadow: 2px 2px 8px #2e2d69; */
+}
+@media all and (max-width:760px) {
+    .desktop{
+        display: none;
     }
-
-    header{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .heading{
-        margin: 0;
-        font-size: 15px;
-        text-align: left
-    }
-    nav ul{
-       display: flex;
-       align-items: center;
-       flex-direction: column;
+    .logo-image{
+        width: 100%;
+        text-align: center;
     }
     
-    li{
-        font-weight: bold;
+    #logo {
+        display: block;
+        width: 100%;
+        margin: auto;
     }
-
-    footer {
+    .logo-subtitle{
+        width: 100%;
+        text-align: center;
+    }
+    nav li{
+         display: block;    
+    }
+    
+    nav ul{
         display: flex;
         flex-direction: column;
     }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0%;
+        padding: 10px;
+    }
+    .item nav ul{
+        display: flex;
+        flex-direction: column; 
+    }
+    .social-links{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .footer-img {     
+        width: 7%;
+    }
+    
+    
+  
 }

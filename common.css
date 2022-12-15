@@ -67,6 +67,7 @@ main {
     margin: 0 auto;
     padding: 0 30px;
 }
+
 /* h1, h2, h3, h4, h5, h6 {
     font-family: "Varela" Round,arial,sans-serif;
     font-weight: normal;
@@ -176,6 +177,9 @@ section {
     text-align: center;
 }
 
+a:hover{
+ background-color: burlywood;
+}
 
 
 

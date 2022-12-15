@@ -37,8 +37,18 @@ h2{
     border-bottom: solid gainsboro 3px;
 }
 
+#packages li{
+    font-weight: 400;
+}
+
 #reviews p{
     text-align: right;
+}
+
+
+h2, h3, h4, .comment-count {
+    color: #a10000;
+    text-align: center;
 }
 
 main{
